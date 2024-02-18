@@ -75,7 +75,7 @@ for i in range(len(df)):
 
 df['Namaz Time'] = df['Namaz Time'].dt.strftime('%I:%M %p')
 
-df.columns = ['Namaz', 'Namaz Time', 'Engineer Center 359 ECOT', 'Norlin Library 1st Floor Mindfulness Room', 'UMC Quite Room', 'ICB']
+df.columns = ['Namaz', 'Salah Time', 'Engineer Center 359 ECOT', 'Norlin Library 1st Floor Mindfulness Room', 'UMC Quite Room', 'ICB']
 df.set_index("Namaz", inplace=True)
 
 st.table(df)
