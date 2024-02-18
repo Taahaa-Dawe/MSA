@@ -46,7 +46,7 @@ for i in range(len(df)):
             # Set 'UMC' column for 'Dhuhr' to 1:30 PM
             df.at[i, 'UMC'] = '01:30 PM'
             # Set 'ICB' column for 'Dhuhr' to 1:00 PM
-            df.at[i, 'ICB'] = '01:00 PM'
+            df.at[i, 'ICB'] = '12:10 PM'
         else:
             # Calculate 'Engineer Center' column (add 2 minutes)
             e_time = namaz_time + pd.Timedelta(minutes=2)
