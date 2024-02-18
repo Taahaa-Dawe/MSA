@@ -81,4 +81,11 @@ df.drop(df.index[1],inplace=True)
 df.set_index("Namaz", inplace=True)
 st.set_page_config(layout="wide")
 st.table(df)
+st.write(""" 
+	<ul>
+		<li> Fajr Prayer can only be performed at the Engineering Center if the person has access to the building through a buff card
+		<li> The UMC opens at 7 a.m. and closes at 12 a.m., and on Sundays, it opens at 10 a.m. and closes at 10 p.m.
+		<li> The Norlin Library hours are subject to change.
+	</ul>
+	"""	,unsafe_allow_html=True)
 st.write("Prayer Time was Scraped from <a href = 'https://www.islamicfinder.org/world/united-states/5574991/boulder-prayer-times/'>IslamicFinder</a>",unsafe_allow_html=True)
