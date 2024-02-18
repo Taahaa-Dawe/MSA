@@ -74,8 +74,8 @@ for i in range(len(df)):
 # Display the DataFrame
 
 df['Namaz Time'] = df['Namaz Time'].dt.strftime('%I:%M %p')
-
-df.columns = ['Namaz', 'Salah Time', 'Engineer Center 359 ECOT Iqamah', 'Norlin Library 1st Floor Mindfulness Room Iqamah', 'UMC Quite Room Iqamah', 'ICB']
+df.drop(["Sunrise  "],inplace=True)
+df.columns = ['Namaz', 'Salah Time', 'Engineering Center 359 ECOT Iqamah', 'Norlin Library 1st Floor Mindfulness Room Iqamah', 'UMC Quiet Room Iqamah', 'ICB']
 df.set_index("Namaz", inplace=True)
 st.set_page_config(layout="wide")
 st.table(df)
