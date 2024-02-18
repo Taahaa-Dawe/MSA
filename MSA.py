@@ -33,7 +33,7 @@ df['ICB'] = ''
 
 # Calculate values for 'Engineer Center', 'Norlin Library', and 'UMC' columns for all prayers except 'Sunrise'
 for i in range(len(df)):
-    if df.loc[i, 'Namaz'] != 'Sunrise':
+    if df.loc[i, 'Namaz'] != 'Sunrise  ':
         namaz_time = pd.to_datetime(df.loc[i, 'Namaz Time'])
 
         # Check if it's Friday and Dhuhr time
